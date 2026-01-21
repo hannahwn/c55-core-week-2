@@ -29,7 +29,7 @@ if (menuSelection === "1") {
   if (Number.isNaN(usdAmountNum) || usdAmountNum < 0) {
     console.log("Please enter a valid positive number for the amount.");
   } else {
-    const eurAmount = usdAmountNum / eur_usd_rate;
+    const eurAmount = usdAmountNum / EUR_USD_RATE;
     console.log(usdAmountNum.toFixed(2) + ' USD is equal to ' + usdAmountNum.toFixed(2) + ' EUR.');
   }
 } else {
