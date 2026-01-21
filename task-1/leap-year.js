@@ -14,16 +14,16 @@ let year = Number(UserInput);
 
 if(year<1 || year >9999 || isNaN(year)){
     console.log('Invalid Year');}
-    else{
 
- if(year % 4 === 0){
+    else if(year % 400 === 0 ){
     console.log('Yes,' +year+' is a leap year');
 }
-else if(year % 100 ===0 || year % 400 === 0){
-    console.log('Yes,' +year+' is a leap year');
+else if(year % 100 ===0 || !year % 4 ===0){
+
+    console.log('no,' +year+' is not a leap year');
 }
 else{
     console.log('No,' +year+' is not a leap year');
 }
 
-}
+
