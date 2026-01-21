@@ -7,11 +7,16 @@ const prompt = promptSync();
 // Step 1: prompt the user to enter a year
 // Step 2: convert the user input to a number so we can perform calculations
 // Step 3: Implement the logic
-let year = prompt('Enter an year: ');
+let UserInput = prompt('Enter an year: ');
 
-if (year % 4 == 0){
-    console.log('Yes, '+year + ' is a leap year');
-    }
-   else if(year % 100 == 0){
-        console.log('No, '+year+' is not a leap year'); 
+let year = Number(UserInput);
+
+
+if(year>1 && year >9999 || isNaN(year)){
+    console.log('Invalid Year');
 }
+else if(year % 4 === 0){
+    console.log('Yes,' +year+' is a leap year');
+}
+
+
