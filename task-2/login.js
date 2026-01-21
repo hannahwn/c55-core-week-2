@@ -31,6 +31,20 @@ function onLogin(username, password) {
     }
     
     
+    if (foundCorrectUser === true) {     
+        incorrectAttempts = 0;
+        successMessage("Logged in successfully");
+    } else {
+        
+        incorrectAttempts = incorrectAttempts + 1;
+        
+        
+        if (incorrectAttempts >= 4) {
+            errorMessage("Login blocked: Too many incorrect attempts");
+        } else {
+            errorMessage("Incorrect credentials");
+        }
+    }
 
 }
 
