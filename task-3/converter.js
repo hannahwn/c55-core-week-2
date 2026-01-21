@@ -16,7 +16,7 @@ if (menuSelection === "1") {
   // EUR to USD
   const eurAmountInput = prompt("Enter amount in EUR: ");
   const eurAmountNum = Number(eurAmountInput);
-  if (Number.isNaN(eurAmountNum) || eurAmountNum > 0) {
+  if (Number.isNaN(eurAmountNum) || eurAmountNum < 0) {
     console.log("Please enter a valid positive number for the amount.");
   } else {
     const usdAmount = eurAmountNum * EUR_USD_RATE;
