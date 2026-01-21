@@ -17,7 +17,21 @@ function onLogin(username, password) {
     errorMessage('Login blocked: Too many incorrect attempts');
     return;
   }
-  
+    
+    let foundCorrectUser = false;
+    
+    
+    if (username === validUsers[0].username && password === validUsers[0].password) {
+        foundCorrectUser = true;
+    }
+    
+    
+    if (username === validUsers[1].username && password === validUsers[1].password) {
+        foundCorrectUser = true;
+    }
+    
+    
+
 }
 
 // Do not change the line below
