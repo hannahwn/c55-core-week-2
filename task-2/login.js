@@ -13,6 +13,11 @@ function onLogin(username, password) {
     {username : 'admin', password : 'Hack1234'},
     {username : 'user', password : 7654321}
   ];
+  if (incorrectAttempts >= 4){
+    errorMessage('Login blocked: Too many incorrect attempts');
+    return;
+  }
+  
 }
 
 // Do not change the line below
