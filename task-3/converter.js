@@ -5,7 +5,7 @@ const prompt = promptSync();
 const EUR_USD_RATE = 1.1643;
 
 // Menu display
-conole.log("Hello and welcome to the currency converter. Please choose: ");
+console.log("Hello and welcome to the currency converter. Please choose: ");
 console.log("1: Convert EUR to USD");
 console.log("2: Convert USD to EUR");
 const menuSelection = prompt("Select your option [1 or 2]: ");
